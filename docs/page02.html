@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>KNOW PRICES</title>
+        <style>
+            .container {
+                height: 200px;
+                text-align: center;
+                background-color: rgb(46, 48, 47);
+                color: #fff;
+            }
+            .select{
+                height: 70vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: rgb(161, 160, 156);
+            }
+            .select-left{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 20px;
+            }
+            .select-left-title h2{
+                font-weight: 500;
+                margin-bottom: 5px;
+                font-size: 40px;
+                color:aquamarine
+                
+            }
+            .select-left-title hr{
+                width: 120px;
+                height: 5px;
+                background-color: aquamarine;
+                border: none;
+                border-radius: 10px;
+                margin-bottom: 20px;
+           }
+           .select-inputs{
+            width: 400px;
+            height:50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            border-radius: 50px;
+            color: brown;
+            font-weight: 400;
+        }
+        .select-inputs:focus{
+            border: 2px solid #ff994f;
+        }
+        .select-inputs::placeholder{
+            color: #a9a9a9;
+        }
+        .select-left button{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color:#fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(270deg, #584b42, #440e18);
+        }
+        .select-right img{
+            width: 500px;
+        }
+        main{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+        }
+        .boxed{
+            background-color: rgba(187, 191, 194, 0.5);
+            width: 300px;
+            height: 210px;
+            text-align: center;
+            margin: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            position: relative;
+            }
+
+        .boxed h4 {
+            color: #333;
+            margin-top: 25px;
+        }
+
+        .boxed ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .boxed ul li {
+            margin-bottom: 5px;
+            color: #111111;
+        }
+
+        .prev,
+        .next {
+            color: #292828;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0 10px;
+            background-color: #b1a8a8;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: #816d6d;
+        }
+
+        .prev {
+            float: left;
+        }
+
+        .next {
+            float: right;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="padding-top: 60px;">KNOW PRICES</h1>
+            <h4>Search Choose Select Sell !</h4>
+        </div>
+        <div class="select">
+            <form action="" class="select-left">
+                <div class="select-left-title">
+                    <h2>Select your crop</h2>
+                    <hr>
+                </div>
+                <input type="text" name="village-name" placeholder="Enter your village name" class="select-inputs">
+                <input type="text" name="crop-name" placeholder="Enter your crop name" class="select-inputs">
+                <input type="text" name="crop-type" placeholder="Enter your crop type" class="select-inputs">
+                <button type="submit">submit</button>
+            </form>
+            <div class="select-right">
+                <img src="https://sleepapp.com/theme/imgs/image-asmr.png" alt="enter your detils">
+            </div> 
+        </div>       
+        <div class="merchants">
+            <div class="merchants-title">
+                <h2 style="text-align: center;">Merchants Available</h2>
+                <hr>
+            </div>
+            <main>
+                <div class="boxed">
+                    <h4>Merchant 1</h4>
+                    <hr>
+                    <ul>
+                        <li>Price: 1000</li>
+                        <li>Location: xyz</li>
+                        <li>Phone: 1234567890</li>
+                    </ul>
+                </div>
+                <div class="boxed">
+                    <h4>Merchant 2</h4>
+                    <hr>
+                    <ul>
+                        <li>Price: 1000</li>
+                        <li>Location: xyz</li>
+                        <li>Phone: 1234567890</li>
+                    </ul>
+                </div>
+                <div class="boxed">
+                    <h4>Merchant 3</h4>
+                    <hr>
+                    <ul>
+                        <li>Price: 1000</li>
+                        <li>Location: xyz</li>
+                        <li>Phone: 1234567890</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+        <div>
+            <a href="index.html" class="prev">Previous Page</a>
+            <a href="page03.html" class="next">Next Page</a>
+        </div>
+    </body>
+</html>

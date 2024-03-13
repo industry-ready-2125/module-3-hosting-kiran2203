@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Process</title>
+        <style>
+            .mainh {
+                height: 200px;
+                text-align: center;
+                background-color: rgb(222, 226, 224);
+                color: #0a0a0a;
+                padding-top: 30px;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #f0f0f0;
+            }
+            .logo{
+                font-size: 24px;
+                font-weight: bold;
+                color: #333;
+                text-decoration: none;
+                position: relative;
+            }
+            .logo::after{
+                width: 75%;
+                height: 3px;
+                content:'';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                background-color: #333;
+            }
+            .search-container{
+                margin:20px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            input[type=text]{
+                padding: 10px;
+                width: 300px;;
+            }
+            button{
+                padding:10px 20px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #0056b3;
+            }
+            .main-content {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px; 
+            margin: 20px;
+            }
+
+            .search-results {
+                display: grid;
+                gap: 20px; 
+            }
+            .search-result {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                gap: 20px; 
+            }
+            .text-description {
+                grid-column: 1 / 2; 
+            }
+
+            .youtube-video {
+                width: 500px; 
+                height: 300px; 
+                padding-left:100px;
+                padding-top:100px;
+            }
+
+            .youtube-video iframe {
+                width: 100%; 
+                height: 100%; 
+            }
+            .prev,
+            .next {
+                color: #292828;
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin: 0 10px;
+                background-color: #b1a8a8;
+            }
+
+            .prev:hover,
+            .next:hover {
+                background-color: #816d6d;
+            }
+
+            .prev {
+                float: left;
+            }
+
+            .next {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mainh">
+            <h1>Deep Dive</h1>
+            <h4>Know the process behind ...</h4>
+        </div>
+        <header class="header">
+            <div class="logo">Know about </div>
+            <div class="search-container">
+                <input type="text" placeholder="Enter Crop name..." name="search">
+                <button>Search</button>
+        </div>
+        </header>
+        <div class="main-content">
+            <div class="search-results">
+                <!-- Search results will be displayed here -->
+                <div class="search-result">
+                    <div class="text-description">
+                        <h2>How to Grow [Crop Name] Successfully</h2>
+                        <p>
+                            Are you a new farmer eager to learn how to grow [crop name]? Follow these steps to start your journey towards a successful harvest:
+                        </p>
+                        <ol>
+                            <li><strong>Choose the Right Location:</strong> Select a well-drained area with plenty of sunlight.</li>
+                            <li><strong>Prepare the Soil:</strong> Ensure the soil is loose, fertile, and well-aerated. Incorporate organic matter if necessary.</li>
+                            <li><strong>Planting:</strong> Sow seeds or transplant seedlings according to the recommended spacing and depth. Water thoroughly after planting.</li>
+                            <li><strong>Provide Adequate Water:</strong> Water the crop regularly, especially during dry periods. Avoid overwatering to prevent root rot.</li>
+                            <li><strong>Fertilization:</strong> Apply balanced fertilizer as per the crop's requirements at different growth stages.</li>
+                            <li><strong>Pest and Disease Management:</strong> Monitor the crop regularly for signs of pests and diseases. Use organic or chemical control methods as needed.</li>
+                            <li><strong>Harvesting:</strong> Harvest the crop when it reaches maturity. Follow guidelines for the specific crop, such as color, size, or texture.</li>
+                            <li><strong>Post-Harvest Handling:</strong> Handle harvested produce with care to minimize damage. Store in appropriate conditions to maintain freshness and quality.</li>
+                            <li><strong>Continuous Learning:</strong> Keep learning from your experiences and seek advice from experienced farmers or agricultural experts.</li>
+                        </ol>
+                        <p>
+                            By following these steps and staying attentive to your crop's needs, you can enjoy a successful harvest and continue to improve your farming skills.
+                        </p>
+                    </div>
+                    
+                    <div class="youtube-video">
+                        <!-- Embedded YouTube video will be displayed here -->
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    </div>
+        </div>
+        <div>
+            <a href="page02.html" class="prev">Previous Page</a>
+            <a href="page04.html" class="next">Next Page</a>
+        </div>
+    </body>
+</html>
